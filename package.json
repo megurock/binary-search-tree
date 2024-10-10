@@ -1,0 +1,27 @@
+{
+  "name": "binary-tree",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "run-p serve ts",
+    "build": "tsc",
+    "ts": "tsc -w",
+    "serve": "browser-sync start -s public --port 3000 -w",
+    "generateDummyJson": "node ./generateDummyJson.js"
+  },
+  "keywords": [],
+  "author": "megurock",
+  "license": "UNLICENSED",
+  "description": "",
+  "devDependencies": {
+    "@faker-js/faker": "^9.0.3",
+    "browser-sync": "^3.0.3",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.6.3"
+  },
+  "volta": {
+    "node": "22.5.1",
+    "npm": "10.8.2"
+  }
+}

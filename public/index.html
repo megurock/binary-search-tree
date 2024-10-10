@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary Search Tree Experiment</title>
+    <script type="module" src="/js/index.js"></script>
+    <style>
+      * {
+        margin: 0;
+      }
+      body {
+        padding-block: 2rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      button {
+        padding: 1rem;
+      }
+      button:not(:disabled) {
+        cursor: pointer;
+      }
+      .layout {
+        max-width: 1024px;
+        margin-inline: auto;
+        display: grid;
+        grid-auto-flow: row;
+        gap: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <h1>Binary Search Tree Experiment</h1>
+      <p>
+        Measure the time it takes to retrieve or delete one randomly selected record from 100,000
+        records.
+      </p>
+      <div>
+        <button type="button" id="searchButton" disabled>Find One</button>
+        <button type="button" id="deleteButton" disabled>Delete One</button>
+      </div>
+      <div id="output"></div>
+    </div>
+  </body>
+</html>
